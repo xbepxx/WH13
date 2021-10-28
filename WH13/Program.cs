@@ -35,7 +35,7 @@ namespace WH13
             Console.WriteLine("Адрес дома {0}, длина дома {1}, ширина дома {2}, высота дома {3}", Adress, Lenght, Width, Height);
         }
     }
-    class Multibuilding:Building
+    sealed class Multibuilding:Building
     {
         public int Floor { get; set; }
         public Multibuilding (string adress, int lenght, int width, int height, int floor)
